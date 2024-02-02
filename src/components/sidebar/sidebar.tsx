@@ -1,26 +1,26 @@
 import Link from "next/link";
-// import { Button } from "../ui/button";
-// import { LayoutDashboard, Wallet } from "lucide-react";
+import { Button } from "../ui/button";
+import { LayoutDashboard, Wallet } from "lucide-react";
 
 function Sidebar() {
   return (
     <aside className="border-r py-2 px-4 flex flex-col gap-4">
       <div className="py-2">LOGO</div>
       <nav>
-        {/* <Sidebar.ListItem>
+        <Sidebar.ListItem>
           <Sidebar.Item>
-            <Button variant="outline" className="flex gap-2">
-              <LayoutDashboard strokeWidth={1.75} />
+            <Button variant="ghost" className="flex gap-2">
+              <LayoutDashboard strokeWidth={2} size={20} />
               <Link href="/">Dashboard</Link>
             </Button>
           </Sidebar.Item>
           <Sidebar.Item>
-            <Button variant="outline" className="flex gap-2">
-              <Wallet strokeWidth={1.75} />
+            <Button variant="ghost" className="flex gap-2">
+              <Wallet strokeWidth={2} size={20} />
               <Link href="/accounts">Accounts</Link>
             </Button>
           </Sidebar.Item>
-        </Sidebar.ListItem> */}
+        </Sidebar.ListItem>
       </nav>
     </aside>
   );
